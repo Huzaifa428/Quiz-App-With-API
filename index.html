@@ -1,0 +1,87 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0"/>
+  <title>Quiz App With API</title>
+  <style>
+    body {
+      font-family: Arial, sans-serif;
+      padding: 20px;
+      background: #f4f6fa;
+    }
+
+    .quiz-box {
+      max-width: 700px;
+      margin: auto;
+      padding: 30px;
+      border-radius: 12px;
+      background: linear-gradient(to bottom right, #7a7a7a, #95e2e2);
+      box-shadow: 0 8px 24px rgba(0, 0, 0, 0.2);
+      position: relative;
+    }
+
+    h2 {
+      text-align: center;
+      color: #000000;
+      margin-bottom: 20px;
+    }
+
+    .question-text {
+      font-weight: bold;
+      font-size: 18px;
+      margin-bottom: 12px;
+      color: #1d1d1d;
+    }
+
+    .option {
+      margin: 8px 0;
+      font-size: 16px;
+    }
+
+    #nextBtn, #submitBtn {
+      padding: 10px 25px;
+      margin-top: 20px;
+      font-size: 16px;
+      cursor: pointer;
+      background-color: #2196f3;
+      color: white;
+      border: none;
+      border-radius: 6px;
+      transition: background-color 0.3s ease;
+    }
+
+    #nextBtn:hover, #submitBtn:hover {
+      background-color: rgb(180, 197, 212);
+      color: #0c92ff;
+    }
+
+    #submitBtn {
+      display: none;
+    }
+
+    #timer {
+      font-size: 18px;
+      font-weight: bold;
+      color: #000000;
+      position: absolute;
+      top: 20px;
+      right: 30px;
+    }
+  </style>
+
+  <script src="https://cdn.jsdelivr.net/npm/sweetalert2@11"></script>
+</head>
+<body>
+
+  <div class="quiz-box">
+    <h2>Quiz App With API</h2>
+    <div id="timer">Time Left: 30s</div>
+    <div id="questionContainer"></div>
+    <button id="nextBtn">Next</button>
+    <button id="submitBtn">Submit</button>
+  </div>
+
+  <script src="app.js"></script>
+</body>
+</html>
